@@ -12,12 +12,12 @@ class Hotel {
   }
 
   generarHabitaciones(habitaciones) {
-    console.log(habitaciones);
     this.habitaciones = [];
     for (let i = 0; i < 20; i++) {
+      const currentHabitacion = habitaciones?.[i];
       const habitacion = new Habitacion(
         i,
-        habitaciones[i] ? Boolean(habitaciones[i].ocupada) : false
+        currentHabitacion ? Boolean(currentHabitacion.ocupada) : false
       );
       this.habitaciones.push(habitacion);
     }
