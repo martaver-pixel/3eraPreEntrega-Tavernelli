@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="layout.css">
+
+  <title>Hoteles en Palma de Mallorca</title>
+</head>
+
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4">
+          <a href="index.html">Palma de Mallorca</a>
+        </div>
+        <nav class="col-xs-8">
+          <ul>
+            <li><a href="">Contactanos</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Otros destinos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- titulo -->
+  <div class="div-title">
+    <h1 class="title">Hoteles</h1>
+  </div>
+  <!-- hoteles -->
+  <div class="container">
+    <div class="row" id="hoteles-wrapper"></div>
+    <div class=" row">
+      <div id="book-form" class="hidden"> 
+        <form>
+        <label for="cantpers">Cantidad de personas:</label>
+        <input type="text" id="cantpers" ><br><br>
+        <label for="cantnoches">Cantidad de noches:</label>
+        <input type="text" id="cantnoches" ><br><br>
+        <input type="submit" value="Caluclar">
+        </form>
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
